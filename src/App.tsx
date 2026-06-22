@@ -231,9 +231,43 @@ export default function App() {
         </div>
       )
     },
-    // Slide 9: Fases do Desenvolvimento
+    // Slide 9: WebAssembly: O Motor de Regras (moved before Fases)
     {
-      eyebrow: "7. cronograma e etapas",
+      eyebrow: "7. arquitetura técnica",
+      title: "WebAssembly: O Motor de Regras",
+      content: (
+        <div className="space-y-4 text-xs sm:text-sm text-[color:var(--ink)]">
+          <p className="leading-relaxed text-xs sm:text-sm">
+            Para que a IA local tome decisões lógicas rápidas, o motor que valida e calcula os lances do jogo foi compilado em <strong>WebAssembly (WASM)</strong>.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+            <div className="p-4 bg-[#fffdf8] rounded-xl border border-[color:var(--paper-dark)] shadow-sm rotate-[-1deg]">
+              <span className="font-bold text-amber-700 uppercase block text-[10px] tracking-wider mb-2">
+                O que é o WebAssembly?
+              </span>
+              <p className="text-black/85 leading-relaxed text-xs">
+                É um padrão de formato binário que permite executar código compilado (como <strong>Rust</strong>) diretamente no navegador com <strong>desempenho quase nativo</strong> de máquina.
+              </p>
+            </div>
+            
+            <div className="p-4 bg-[#fffdf8] rounded-xl border border-[color:var(--paper-dark)] shadow-sm rotate-[1deg]">
+              <span className="font-bold text-orange-700 uppercase block text-[10px] tracking-wider mb-2">
+                Por que usamos no projeto?
+              </span>
+              <ul className="list-disc pl-4 space-y-1.5 text-black/80 text-xs">
+                <li><strong>Cálculo Ultra-rápido:</strong> Validação de regras e lances de xadrez em nível de milissegundos.</li>
+                <li><strong>Zero Latência:</strong> Executado 100% localmente no navegador, sem qualquer chamada ou dependência de rede.</li>
+                <li><strong>Fluidez na UI:</strong> Evita gargalos de processamento e travamento da interface em React.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    // Slide 10: Fases do Desenvolvimento
+    {
+      eyebrow: "8. cronograma e etapas",
       title: "As 4 Fases do Desenvolvimento",
       content: (
         <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
@@ -251,40 +285,6 @@ export default function App() {
                 <li><strong>Fase 3 (Ago-Out/2026):</strong> Desenvolvimento do tabuleiro de Xadrez modular integrado ao WASM e WebMCP.</li>
                 <li><strong>Fase 4 (Out-Dez/2026):</strong> Execução dos testes controlados, análise qualitativa e redação final da defesa.</li>
               </ul>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    // Slide 10: WebAssembly: O Motor de Regras
-    {
-      eyebrow: "8. arquitetura técnica",
-      title: "WebAssembly: O Motor de Regras",
-      content: (
-        <div className="space-y-4 text-sm sm:text-base text-[color:var(--ink)]">
-          <p className="leading-relaxed text-xs sm:text-sm">
-            Para garantir que a integração do WebMCP não cause gargalos de processamento na interface do React, o motor lógico foi compilado em <strong>WebAssembly (WASM)</strong>.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-            <div className="p-4 bg-[#fffdf8] rounded-lg border border-[color:var(--paper-dark)] shadow-sm text-xs">
-              <h4 className="font-bold text-[color:var(--chess-dark)] uppercase mb-1">Cálculo Local de Performance</h4>
-              <ul className="list-disc pl-4 space-y-1 text-black/75">
-                <li>Motor do Jogo da Velha e motor de Xadrez escritos em Rust.</li>
-                <li>Validação de movimentos legais a nível de milissegundos sem chamadas de rede.</li>
-                <li>Fornece sugestões instantâneas de dicas à IA via WebAssembly.</li>
-              </ul>
-            </div>
-            <div className="p-4 bg-[#fffdf8] rounded-lg border border-[color:var(--paper-dark)] shadow-sm text-xs font-mono">
-              <h4 className="font-bold text-[color:var(--chess-dark)] uppercase font-sans mb-1">Bindings no Frontend</h4>
-              <span className="text-[color:var(--marker-x)]">// Ponte via wasmEngine.ts</span>
-              <pre className="mt-1 bg-black/5 p-2 rounded text-[10px] overflow-x-auto">
-{`import init, { best_move } from '../pkg/chess_engine';
-
-export function getBestMove(fen: string, lvl: number) {
-  return best_move(fen, lvl); // Executado em WASM
-}`}
-              </pre>
             </div>
           </div>
         </div>
