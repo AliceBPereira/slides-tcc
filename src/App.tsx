@@ -19,7 +19,7 @@ export default function App() {
           <div className="status-note px-6 py-2.5 mb-4 bg-[#fffdf8] text-xs font-semibold uppercase tracking-wider text-black/60 shadow-sm max-w-fit">
             Ciência da Computação — IFSULDEMINAS
           </div>
-          <h2 className="text-xl sm:text-2xl font-bold text-[color:var(--ink)] leading-tight max-w-2xl lowercase mt-2">
+          <h2 className="text-xl sm:text-2xl font-bold text-[color:var(--ink)] leading-tight max-w-2xl mt-2">
             Um estudo de caso sobre a tomada de decisão sequencial de LLMs via WebMCP em aplicações ReactJS
           </h2>
           <div className="mt-4 p-2 bg-amber-100/50 rounded border border-amber-200/60 max-w-lg text-[10px] font-mono text-[color:var(--chess-dark)] uppercase tracking-wider">
@@ -56,7 +56,7 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-2 text-xs">
             <div className="status-note p-3 bg-[#fffdf8] rounded border-l-4 border-amber-500 rotate-[-1deg]">
               <span className="font-bold text-amber-700 block mb-1">Nível Físico (Navegador)</span>
-              Execução local no Chrome Beta, tirando proveito das APIs nativas (Built-in AI) e do modelo Gemini Nano local.
+              Execução local no Chrome Beta, tirando proveito das capacidades nativas do modelo Gemini Nano.
             </div>
             <div className="status-note p-3 bg-[#fffdf8] rounded border-l-4 border-orange-500 rotate-[1.5deg]">
               <span className="font-bold text-orange-700 block mb-1">Nível de Aplicação</span>
@@ -571,7 +571,7 @@ export function getBestMove(fen: string, lvl: number) {
           <p className="text-[0.65rem] font-medium uppercase tracking-[0.26em] text-black/55">
             {slides[currentSlide].eyebrow}
           </p>
-          <h1 className="mt-1 text-2xl sm:text-3xl font-semibold lowercase">
+          <h1 className="mt-1 text-2xl sm:text-3xl font-semibold">
             {slides[currentSlide].title}
           </h1>
         </header>
