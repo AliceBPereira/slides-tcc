@@ -376,7 +376,7 @@ export function getBestMove(fen: string, lvl: number) {
             <div className="space-y-3">
               <h4 className="font-bold uppercase tracking-wider text-[color:var(--ink)]">Disseminação dos Resultados:</h4>
               <p className="text-xs text-black/80 leading-relaxed">
-                O projeto disponibilizará o ecossistema open-source no GitHub e os resultados serão submetidos à <strong>Jornada Científica e Tecnológica do IFSULDEMINAS</strong>, visando registrar benchmarks acadêmicos de interação IA-Front-end.
+                O projeto disponibilizará o ecossistema open-source no GitHub.
               </p>
               <div className="p-3 bg-[#fffdf8] rounded border border-[color:var(--paper-dark)] text-[10px] text-center font-mono">
                 Ponte WebMCP estável e validada.
