@@ -93,60 +93,9 @@ export default function App() {
         </div>
       )
     },
-    // Slide 4: Caracterização do Problema
+    // Slide 4: O que é o MCP (Model Context Protocol) (previously 6)
     {
-      eyebrow: "2. caracterização do problema",
-      title: "O Desafio da Decisão Sequencial",
-      content: (
-        <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
-          <p className="leading-relaxed">
-            LLMs modernos falham frequentemente em tarefas que exigem <strong>decisões sequenciais complexas</strong>, onde cada escolha impacta o estado futuro do ambiente.
-          </p>
-          
-          <div className="cardboard-board p-4 rounded-lg bg-[color:var(--paper-kraft)] border border-[color:var(--paper-edge)] shadow-inner text-[color:var(--ink)] text-xs">
-            <h4 className="font-bold uppercase tracking-wider mb-1">O Xadrez como Cenário de Teste:</h4>
-            <ul className="list-disc pl-4 space-y-1">
-              <li><strong>Informação Perfeita:</strong> Permite isolar fatores externos e focar na tática.</li>
-              <li><strong>Combinações Complexas:</strong> Exige consistência e planejamento profundo.</li>
-              <li><strong>Raciocínio Probabilístico:</strong> O Gemini opera prevendo tokens probabilísticos, o que gera dúvidas sobre sua consistência em decisões sequenciais estritas.</li>
-            </ul>
-          </div>
-        </div>
-      )
-    },
-    // Slide 5: Objetivos
-    {
-      eyebrow: "3. objetivos do projeto",
-      title: "Objetivo Geral & Específicos",
-      content: (
-        <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
-          <div className="p-3 bg-[#fffdf8] rounded border border-amber-300/80 shadow-sm">
-            <span className="font-bold text-amber-800 uppercase block text-[11px] mb-1">Objetivo Geral</span>
-            Analisar a capacidade de tomada de decisão sequencial de LLMs integrados via WebMCP no navegador em partidas de xadrez de complexidade lógica estruturada.
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[11px] leading-relaxed">
-            <div>
-              <span className="font-bold text-[color:var(--marker-x)] block mb-1">Objetivos Específicos (1-2)</span>
-              <ul className="list-decimal pl-4 space-y-1 text-black/85">
-                <li>Desenvolver aplicação modular em ReactJS unindo motores locais de xadrez (chess.js e WASM) com a API do WebMCP.</li>
-                <li>Expor estados lógicos e ações válidas da UI como Ferramentas (Tools) explícitas.</li>
-              </ul>
-            </div>
-            <div>
-              <span className="font-bold text-[color:var(--marker-o)] block mb-1">Objetivos Específicos (3-4)</span>
-              <ul className="list-decimal pl-4 space-y-1 text-black/85">
-                <li>Comparar o desempenho e a consistência do Gemini Nano local com a IA analítica Minimax compilada em WASM.</li>
-                <li>Mapear latências, erros de lances ilegais e tendências a padrões repetitivos.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      )
-    },
-    // Slide 6: O que é o MCP (Model Context Protocol)
-    {
-      eyebrow: "4. referencial teórico",
+      eyebrow: "2. referencial teórico",
       title: "O que é o MCP (Model Context Protocol)?",
       content: (
         <div className="space-y-4 text-sm sm:text-base text-[color:var(--ink)]">
@@ -177,9 +126,9 @@ export default function App() {
         </div>
       )
     },
-    // Slide 7: WebMCP como Ponte de Integração
+    // Slide 5: WebMCP como Ponte de Integração (previously 7)
     {
-      eyebrow: "5. referencial teórico",
+      eyebrow: "3. referencial teórico",
       title: "WebMCP: A Ponte Front-end",
       content: (
         <div className="space-y-4 text-sm sm:text-base text-[color:var(--ink)]">
@@ -196,6 +145,57 @@ export default function App() {
               <div className="bg-[#fffdf8] p-3 rounded shadow-sm">
                 <strong>Interpretação do DOM:</strong> A IA consegue "enxergar" a árvore visual e lógica em tempo real, manipulando dinamicamente botões e telas.
               </div>
+            </div>
+          </div>
+        </div>
+      )
+    },
+    // Slide 6: Caracterização do Problema (previously 4)
+    {
+      eyebrow: "4. caracterização do problema",
+      title: "O Desafio da Decisão Sequencial",
+      content: (
+        <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
+          <p className="leading-relaxed">
+            LLMs modernos falham frequentemente em tarefas que exigem <strong>decisões sequenciais complexas</strong>, onde cada escolha impacta o estado futuro do ambiente.
+          </p>
+          
+          <div className="cardboard-board p-4 rounded-lg bg-[color:var(--paper-kraft)] border border-[color:var(--paper-edge)] shadow-inner text-[color:var(--ink)] text-xs">
+            <h4 className="font-bold uppercase tracking-wider mb-1">O Xadrez como Cenário de Teste:</h4>
+            <ul className="list-disc pl-4 space-y-1">
+              <li><strong>Informação Perfeita:</strong> Permite isolar fatores externos e focar na tática.</li>
+              <li><strong>Combinações Complexas:</strong> Exige consistência e planejamento profundo.</li>
+              <li><strong>Raciocínio Probabilístico:</strong> O Gemini opera prevendo tokens probabilísticos, o que gera dúvidas sobre sua consistência em decisões sequenciais estritas.</li>
+            </ul>
+          </div>
+        </div>
+      )
+    },
+    // Slide 7: Objetivos (previously 5)
+    {
+      eyebrow: "5. objetivos do projeto",
+      title: "Objetivo Geral & Específicos",
+      content: (
+        <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
+          <div className="p-3 bg-[#fffdf8] rounded border border-amber-300/80 shadow-sm">
+            <span className="font-bold text-amber-800 uppercase block text-[11px] mb-1">Objetivo Geral</span>
+            Analisar a capacidade de tomada de decisão sequencial de LLMs integrados via WebMCP no navegador em partidas de xadrez de complexidade lógica estruturada.
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[11px] leading-relaxed">
+            <div>
+              <span className="font-bold text-[color:var(--marker-x)] block mb-1">Objetivos Específicos (1-2)</span>
+              <ul className="list-decimal pl-4 space-y-1 text-black/85">
+                <li>Desenvolver aplicação modular em ReactJS unindo motores locais de xadrez (chess.js e WASM) com a API do WebMCP.</li>
+                <li>Expor estados lógicos e ações válidas da UI como Ferramentas (Tools) explícitas.</li>
+              </ul>
+            </div>
+            <div>
+              <span className="font-bold text-[color:var(--marker-o)] block mb-1">Objetivos Específicos (3-4)</span>
+              <ul className="list-decimal pl-4 space-y-1 text-black/85">
+                <li>Comparar o desempenho e a consistência do Gemini Nano local com a IA analítica Minimax compilada em WASM.</li>
+                <li>Mapear latências, erros de lances ilegais e tendências a padrões repetitivos.</li>
+              </ul>
             </div>
           </div>
         </div>
