@@ -43,33 +43,7 @@ export default function App() {
         </div>
       )
     },
-    // Slide 2: Objeto de Estudo (WebMCP)
-    {
-      eyebrow: "objeto de estudo",
-      title: "O WebMCP como Objeto de Estudo",
-      content: (
-        <div className="space-y-4 text-sm sm:text-base text-[color:var(--ink)]">
-          <p className="leading-relaxed text-xs sm:text-sm">
-            O objeto central de estudo deste trabalho é o protocolo experimental <strong>WebMCP</strong>, analisando sua capacidade de integrar modelos de inteligência artificial de forma nativa às interfaces Web.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-2 text-xs">
-            <div className="status-note p-3 bg-[#fffdf8] rounded border-l-4 border-amber-500 rotate-[-1deg]">
-              <span className="font-bold text-amber-700 block mb-1">Nível Físico (Navegador)</span>
-              Execução local no Chrome Beta, tirando proveito das capacidades nativas do modelo Gemini Nano.
-            </div>
-            <div className="status-note p-3 bg-[#fffdf8] rounded border-l-4 border-orange-500 rotate-[1.5deg]">
-              <span className="font-bold text-orange-700 block mb-1">Nível de Aplicação</span>
-              Exposição de estados do DOM e controles do front-end por meio de Tool Schemas controlados no React.
-            </div>
-            <div className="status-note p-3 bg-[#fffdf8] rounded border-l-4 border-yellow-500 rotate-[-1deg]">
-              <span className="font-bold text-yellow-700 block mb-1">Nível Cognitivo</span>
-              Análise do comportamento e planejamento da IA ao tomar decisões sequenciais (partidas de jogo).
-            </div>
-          </div>
-        </div>
-      )
-    },
+
     // Slide 3: Introdução e Justificativa
     {
       eyebrow: "1. introdução & justificativa",
