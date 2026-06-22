@@ -180,7 +180,7 @@ export default function App() {
           {/* Objetivo Geral */}
           <div className="p-3 bg-[#fffdf8] rounded-xl border-l-4 border-amber-500 shadow-sm relative overflow-hidden">
             <span className="font-bold text-amber-700 uppercase block text-[10px] tracking-wider mb-1">
-              🎯 Objetivo Geral
+              Objetivo Geral
             </span>
             <p className="leading-relaxed text-[11px] sm:text-xs text-black/85">
               Analisar as capacidades, o desempenho e a interatividade do protocolo WebMCP por meio do desenvolvimento e teste de um jogo de xadrez, avaliando o comportamento de um modelo de IA frente a jogadores humanos e algoritmos tradicionais.
@@ -190,7 +190,7 @@ export default function App() {
           {/* Objetivos Específicos */}
           <div>
             <span className="font-bold text-[color:var(--ink)] uppercase block text-[10px] tracking-wider mb-2 ml-1">
-              📋 Objetivos Específicos
+              Objetivos Específicos
             </span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-[10px] sm:text-[11px] leading-snug">
               {/* Card 1: Fundamentação & Integração */}
