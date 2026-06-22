@@ -176,26 +176,55 @@ export default function App() {
       eyebrow: "5. objetivos do projeto",
       title: "Objetivo Geral & Específicos",
       content: (
-        <div className="space-y-3 text-xs sm:text-sm text-[color:var(--ink)]">
-          <div className="p-3 bg-[#fffdf8] rounded border border-amber-300/80 shadow-sm">
-            <span className="font-bold text-amber-800 uppercase block text-[11px] mb-1">Objetivo Geral</span>
-            Analisar a capacidade de tomada de decisão sequencial de LLMs integrados via WebMCP no navegador em partidas de xadrez de complexidade lógica estruturada.
+        <div className="space-y-4 text-xs sm:text-sm text-[color:var(--ink)]">
+          {/* Objetivo Geral */}
+          <div className="p-3 bg-[#fffdf8] rounded-xl border-l-4 border-amber-500 shadow-sm relative overflow-hidden">
+            <span className="font-bold text-amber-700 uppercase block text-[10px] tracking-wider mb-1">
+              🎯 Objetivo Geral
+            </span>
+            <p className="leading-relaxed text-[11px] sm:text-xs text-black/85">
+              Analisar as capacidades, o desempenho e a interatividade do protocolo WebMCP por meio do desenvolvimento e teste de um jogo de xadrez, avaliando o comportamento de um modelo de IA frente a jogadores humanos e algoritmos tradicionais.
+            </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-[11px] leading-relaxed">
-            <div>
-              <span className="font-bold text-[color:var(--marker-x)] block mb-1">Objetivos Específicos (1-2)</span>
-              <ul className="list-decimal pl-4 space-y-1 text-black/85">
-                <li>Desenvolver aplicação modular em ReactJS unindo motores locais de xadrez (chess.js e WASM) com a API do WebMCP.</li>
-                <li>Expor estados lógicos e ações válidas da UI como Ferramentas (Tools) explícitas.</li>
-              </ul>
-            </div>
-            <div>
-              <span className="font-bold text-[color:var(--marker-o)] block mb-1">Objetivos Específicos (3-4)</span>
-              <ul className="list-decimal pl-4 space-y-1 text-black/85">
-                <li>Comparar o desempenho e a consistência do Gemini Nano local com a IA analítica Minimax compilada em WASM.</li>
-                <li>Mapear latências, erros de lances ilegais e tendências a padrões repetitivos.</li>
-              </ul>
+          {/* Objetivos Específicos */}
+          <div>
+            <span className="font-bold text-[color:var(--ink)] uppercase block text-[10px] tracking-wider mb-2 ml-1">
+              📋 Objetivos Específicos
+            </span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-2.5 text-[10px] sm:text-[11px] leading-snug">
+              {/* Card 1: Fundamentação & Integração */}
+              <div className="p-3.5 bg-[#fffdf8] rounded-lg border border-[color:var(--paper-edge)] shadow-sm rotate-[-0.5deg] flex flex-col justify-between">
+                <div>
+                  <span className="font-bold text-amber-800 uppercase block text-[9px] mb-2 tracking-wider">1. Fundamentação & Integração</span>
+                  <ul className="space-y-1.5 list-disc pl-3 text-black/80">
+                    <li><strong>Compreender</strong> as características e o funcionamento do protocolo WebMCP.</li>
+                    <li><strong>Identificar</strong> métodos de integração a aplicações interativas para possibilitar a comunicação com a IA.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Card 2: IA vs Humano vs Clássico */}
+              <div className="p-3.5 bg-[#fffdf8] rounded-lg border border-[color:var(--paper-edge)] shadow-sm rotate-[0.5deg] flex flex-col justify-between">
+                <div>
+                  <span className="font-bold text-amber-800 uppercase block text-[9px] mb-2 tracking-wider">2. Tomada de Decisão</span>
+                  <ul className="space-y-1.5 list-disc pl-3 text-black/80">
+                    <li><strong>Comparar</strong> estratégias e tomada de decisão contrapondo a IA (Gemini) a humanos e motor de busca clássico.</li>
+                    <li><strong>Analisar</strong> padrões de repetição e previsibilidade em jogadas sequenciais.</li>
+                  </ul>
+                </div>
+              </div>
+
+              {/* Card 3: Estabilidade & Limites */}
+              <div className="p-3.5 bg-[#fffdf8] rounded-lg border border-[color:var(--paper-edge)] shadow-sm rotate-[-0.5deg] flex flex-col justify-between">
+                <div>
+                  <span className="font-bold text-amber-800 uppercase block text-[9px] mb-2 tracking-wider">3. Validação & Limites</span>
+                  <ul className="space-y-1.5 list-disc pl-3 text-black/80">
+                    <li><strong>Avaliar</strong> estabilidade da conexão e desafios de integrar apps web a agentes LLM.</li>
+                    <li><strong>Identificar</strong> possíveis limitações práticas do protocolo WebMCP.</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
